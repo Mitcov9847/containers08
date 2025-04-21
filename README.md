@@ -17,21 +17,29 @@
 ### Шаг 1: Создание структуры проекта
 
 Созданы директории:
+V:\Virtual\containers08\
+├── .github\
+│   └── workflows\
+├── site\
+│   ├── modules\
+│   ├── templates\
+│   ├── styles\
+├── sql\
+├── tests\
 
 ### Шаг 2: Создание файлов
 
 Файлы были созданы вручную через Notepad (например, `notepad site\modules\database.php`) и содержат корректный PHP-код и SQL-скрипты.
+mkdir .github\workflows
+mkdir site
+mkdir site\modules
+mkdir site\templates
+mkdir site\styles
+mkdir sql
+mkdir tests
 
-### Шаг 3: Работа с Git
 
-- `git init`
-- `git remote add origin https://github.com/Mitcov9847/containers08.git`
-- `git add .`
-- `git commit -m "Initial commit with PHP web app, test."`
-- `git branch -m master main`
-- `git push origin main`
-
-### Шаг 4: Настройка CI
+### Шаг 3: Настройка CI
 
 Создан `.github/workflows/main.yml`, настроенный на запуск при пуше в ветку `main`.
 
@@ -42,14 +50,9 @@
 - Контейнер запущен.
 - Все тесты (7 из 7) успешно выполнены.
 
-### Шаг 6: Локальное тестирование
+### Шаг 6: Тестирование
 
-- `docker build -t containers08 .`
-- `docker run -d --name container -p 8000:9000 -v database:/var/www/db containers08`
-- Приложение работает по адресу: http://localhost:8000/index.php?page=1
-- Тесты запускались через:
-  ```sh
-  docker cp tests container:/var/www/html
+Все тесты проходят успешно
 
 # Ответы на вопросы
 
