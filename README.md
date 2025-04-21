@@ -38,7 +38,6 @@ mkdir site\styles
 mkdir sql
 mkdir tests
 
-
 ### Шаг 3: Настройка CI
 
 Создан `.github/workflows/main.yml`, настроенный на запуск при пуше в ветку `main`.
@@ -53,6 +52,7 @@ mkdir tests
 ### Шаг 6: Тестирование
 
 Все тесты проходят успешно
+![image](https://github.com/user-attachments/assets/18e38195-78a9-4154-9ad1-66474842aec3)
 
 # Ответы на вопросы
 
