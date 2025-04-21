@@ -84,6 +84,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+```
 
 ## Что нужно добавить в файл `.github/workflows/main.yml`, чтобы удалять созданные Docker-образы после выполнения тестов?
 
